@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>FAQs</title>
+      <!-- <link rel="stylesheet" href="FAQs.css"> -->
+</head>
+<style>
+      @import url("https://fonts.googleapis.com/css?family=Quicksand:wght@400;600&display=swap");
+
+      * {
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+      }
+
+      body {
+            font-family: "Quicksand", sans-serif;
+            background: #1c1c1c;
+            color: #fff;
+      }
+
+      section {
+            min-height: 15vh;
+            width: 80%;
+            margin: 21px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      }
+
+      .title {
+            font-size: 3rem;
+            margin: 2rem 0rem1;
+
+      }
+
+      .faq {
+            max-width: 700px;
+            margin-top: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #fff;
+            cursor: pointer;
+
+      }
+
+      .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      }
+
+      .question h3 {
+            font-size: 1.8rem;
+      }
+
+      .answer {
+            max-height: 75%;
+            overflow: hidden;
+            transition: all .5s ease-in;
+
+      }
+
+      .answer p {
+            padding-top: 1rem;
+            line-height: 1.6;
+            font-size: 1.4rem;
+
+      }
+
+      .faq.active.answer {
+            max-height: 300px;
+            animation: fade 1s ease-in-out;
+      }
+
+      .faq.active svg {
+            transform: rotate(180deg);
+      }
+
+      svg {
+            transition: transform 0.5s ease-in;
+      }
+
+      @keyframes fade {
+            from {
+                  opacity: 0;
+                  transform: translate(-10px);
+            }
+
+            to {
+                  opacity: 1;
+                  transform: translate(0px);
+            }
+      }
+</style>
+
+<body>
+      <section>
+            <h2 class="title">FAQs</h2>
+            <div class="faq">
+                  <div class="question">
+                        <h3>1.What is the use of this website?</h3>
+                        <svg width='15' height='10' viewBox="0 0 42 25">
+                              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+
+
+                  </div>
+                  <div class="answer">
+                        <p> Here we are connecting the workers and who want to hire the workers.</p>
+                  </div>
+            </div>
+            <div class="faq">
+                  <div class="question">
+                        <h3>2.How can I register a job?</h3>
+                        <svg width='15' height='10' viewBox="0 0 42 25">
+                              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+
+
+
+                  </div>
+                  <div class="answer">
+                        <p>Email the job details to alphalightx@gmail.com <br> A recruitment consultant will then be
+                              matched and the concerned help will be done.</p>
+                  </div>
+            </div>
+            <div class="faq">
+                  <div class="question">
+                        <h3>3.What should I have to do If forget my password?</h3>
+                        <svg width='15' height='10' viewBox="0 0 42 25">
+                              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                  </div>
+                  <div class="answer">
+                        <p>Click on forget password and enter the registered mail adress
+                              thorugh which you have logged in,and a reset link of forget password.</p>
+                  </div>
+            </div>
+            <div class="faq">
+                  <div class="question">
+                        <h3>4.What should i have to do if i want to change my profile?</h3>
+                        <svg width='15' height='10' viewBox="0 0 42 25">
+                              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                  </div>
+                  <div class="answer">
+                        <p> In the settings menu an option to edit profile change your profile details.</p>
+                  </div>
+            </div>
+            <div class="faq">
+                  <div class="question">
+                        <h3>5.What should i have to do if i have an login issue?</h3>
+                        <svg width='15' height='10' viewBox="0 0 42 25">
+                              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                  </div>
+                  <div class="answer">
+                        <p> Go to "Contact-Us" page send us a mail regarding it or make a call .</p>
+                  </div>
+            </div>
+            <div class="faq">
+                  <div class="question">
+                        <h3>6.How much does it cost?</h3>
+                        <svg width='15' height='10' viewBox="0 0 42 25">
+                              <path d="M3 3L21 21L39 3" stroke="white" stroke-width="7" stroke-linecap="round" />
+                        </svg>
+                  </div>
+                  <div class="answer">
+                        <p>The cost varies according to the vacancy and type of recruitment strategy required..</p>
+                  </div>
+            </div>
+
+
+      </section>
+
+      <script>
+            const faqs = document.querySelectorAll(".faq");
+            faqs.forEach((faq) => {
+                  faq.addEventListener("click", () => {
+                        faq.classList.toggle("active");
+                  });
+            });
+
+      </script>
+</body>
+
+</html>

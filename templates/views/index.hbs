@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  {{>head}}
+
+  <title>Job-Alo</title>
+</head>
+<style>
+    #navbar{
+    height: 85px;
+    position: sticky;
+}
+.carousel-inner img{
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+#carouselExampleIndicators{
+    background-color: #1e1842;
+}
+#container{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr ;
+}
+.card{
+    margin-top: 40px;
+}
+.card-img-top{
+    height: 220px;
+}
+.card a{
+    display: block;
+    margin: auto;
+}
+
+
+
+</style>
+<body>
+
+  {{>nav}}
+  {{>log}}
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img id="firstimg" class="d-block " src="https://i.pinimg.com/originals/18/a4/94/18a4949fc9c8067172d3b96e302e7097.gif" alt="First slide">
+        </div>
+        <div id="secondimg" class="carousel-item">
+          <img class="d-block " src="https://i.gifer.com/embedded/download/Yy7O.gif" alt="Second slide">
+        </div>
+        <div id="thirdimg" class="carousel-item">
+          <img class="d-block " src="https://i.pinimg.com/originals/a5/35/60/a53560c8088900e266880f779dacced7.gif" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <div id="container">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/data-center-web-hosting-isometric-concept-characters-network-internet-database-trendy-flat-d-style-vector-illustration-179939824.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Database Administrator</h5>
+          <p class="card-text"><ul>
+            <li>Salary:15-25Lk</li>
+            <li>Working Hours: 9hrs</li>
+            <li>Skills: Organizational</li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://img.freepik.com/free-vector/programmer-working-web-development-code-engineer-programming-python-php-java-script-computer_90220-249.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Software Developer</h5>
+          <p class="card-text"><ul>
+            <li>Salary:15-20Lk</li>
+            <li>Working Hours: 8hrs</li>
+            <li>Skills: problem solving</li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/computer-repair-service-flat-cartoon-illustration-tools-repairman-electronics-data-recovery-center-crash-pc-248885723.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Computer Hardware Engineer</h5>
+          <p class="card-text"><ul>
+            <li>Salary:15-20Lk</li>
+            <li>Working Hours: 8hrs</li>
+            <li>Skills:critical thinking </li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://us.123rf.com/450wm/sodis/sodis1604/sodis160400081/56150243-man-sitting-at-a-desk-and-working-on-the-computer-back-view-on-an-isolated-background-flat-design-ve.jpg?ver=6" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Computer Systems Analyst</h5>
+          <p class="card-text"><ul>
+            <li>Salary:15-19Lk</li>
+            <li>Working Hours: 8hrs</li>
+            <li>Skills: Inter personal skill </li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5GHx8ZE1rz-P667Jcmieqrcdkvo6ikDPapO5ZvAb128uyUOPJ6CWZrIaLtH0wEqfmuXg&usqp=CAU" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Computer Network Architect</h5>
+          <p class="card-text"><ul>
+            <li>Salary:15-19Lk</li>
+            <li>Working Hours: 9hrs</li>
+            <li>Skills: Managing</li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://img.freepik.com/free-vector/microsite-development-abstract-concept-illustration-microsite-web-development-small-internet-site-graphic-design-service-landing-page-software-programming-team_335657-253.jpg?w=2000" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Web Developer</h5>
+          <p class="card-text"><ul>
+            <li>Salary:15-22Lk</li>
+            <li>Working Hours: 10hrs</li>
+            <li>Skills: Desiging</li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.istockphoto.com/vectors/general-data-protection-regulation-data-protection-vector-id1311698405?k=20&m=1311698405&s=612x612&w=0&h=N9rg7yXpQY-Va8f0BJZuXQayWFhYpfYYYLXSNrANdXA=" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Information Security Analyst</h5>
+          <p class="card-text"><ul>
+            <li>Salary:11-22Lk</li>
+            <li>Working Hours: 8hrs</li>
+            <li>Skills: Client facing</li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://thumbs.dreamstime.com/b/woman-scientist-laboratory-chemical-glass-bulb-hand-woman-scientist-chemical-glass-bulb-hand-highly-102140632.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Computer and Information Research Scientists</h5>
+          <p class="card-text"><ul>
+            <li>Salary:15-23Lk</li>
+            <li>Working Hours: 10hrs</li>
+            <li>Eperience: 2YR</li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.istockphoto.com/vectors/programmer-or-project-manager-or-student-with-laptop-vector-id1062037236?k=20&m=1062037236&s=612x612&w=0&h=PmgU4nwQsH6D1nA1HQdaHpPM__8-d3P8SYP-Gh0C-zc=" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">IT Project Manager</h5>
+          <p class="card-text"><ul>
+            <li>Salary:11-25Lk</li>
+            <li>Working Hours: 9hrs</li>
+            <li>Skills: Leadership </li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.istockphoto.com/vectors/cartoon-people-characters-in-queue-in-the-bankmale-and-female-clients-vector-id1172696274?k=20&m=1172696274&s=612x612&w=0&h=WSTDWo_UmHXPrOhdPshm8OT-ETTIxr-8fUylVGQgE40=" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"> Commercial Banking</h5>
+          <p class="card-text"><ul>
+            <li>Salary:10-15Lk</li>
+            <li>Working Hours: 7hrs</li>
+            <li>Condition: Banking exam  </li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.istockphoto.com/vectors/abstract-character-concept-vector-id1244808474?k=20&m=1244808474&s=612x612&w=0&h=Qz6nVeNhpwdWcf2LBzg7fTwNsKSm6KK4zHUfYHvNm58=" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Accounting and Auditing</h5>
+          <p class="card-text"><ul>
+            <li>Salary:12-20Lk</li>
+            <li>Working Hours: 9hrs</li>
+            <li>Skills: Time Mangement </li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+      </div><div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://media.istockphoto.com/vectors/online-tax-consultation-with-people-filling-form-vector-illustration-vector-id1313326994?k=20&m=1313326994&s=612x612&w=0&h=QPWk7gb8cbFr64zBeVD5j7fvmgZlHRzMVdRBqjXmy64=" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Tax Advisory Services</h5>
+          <p class="card-text"><ul>
+            <li>Salary:11-30Lk</li>
+            <li>Working Hours: 10hrs</li>
+            <li>Skills: Bgal Knowledge</li>
+            
+          </ul></p>
+          <a href="#" class="btn btn-primary">Apply</a>
+        </div>
+     
+
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://img.freepik.com/premium-vector/financial-services-small-bankers-are-engaged-work-saving-accumulating-money_158757-397.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Financial Services</h5>
+        <p class="card-text"><ul>
+          <li>Salary:6-10Lk</li>
+          <li>Working Hours: 9hrs</li>
+          <li>Condition: CA Exam</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://media.istockphoto.com/vectors/flat-metaphor-poster-presenting-insurance-services-cartoon-male-and-vector-id1181901597?k=20&m=1181901597&s=612x612&w=0&h=_DSHuRFwT8Tn3MbdjYX96ukpDvGGEtZF5Hy8ljeUMVk=
+      " alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Insurance Services</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-30Lk</li>
+          <li>Working Hours: 10hrs</li>
+          <li>Skills: Clint Services</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://img.freepik.com/free-vector/tiny-people-depositing-taking-money-from-government-bank-flat-illustration_74855-17121.jpg?w=2000" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Government Services</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-30Lk</li>
+          <li>Working Hours: 11hrs</li>
+          <li>Skills: Professionalism</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">ApplySS</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://www.syntacticsinc.com/wp-content/uploads/2021/07/5138237-1024x1024.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Marketing Assistant</h5>
+        <p class="card-text"><ul>
+          <li>Salary:15-20Lk</li>
+          <li>Working Hours: 11hrs</li>
+          <li>Skills: Commercial Awarness</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://img.freepik.com/premium-vector/copywriter-author-articles-concept_118813-2417.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Copy writer</h5>
+        <p class="card-text"><ul>
+          <li>Salary:15-20Lk</li>
+          <li>Working Hours: 9hrs</li>
+          <li>Skills: Wide Vocab</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://img.freepik.com/free-vector/brand-building-isometric-concept-with-characters-colorful-blocks-3d-illustration_1284-64000.jpg?w=2000" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Brand Manager</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-25Lk</li>
+          <li>Working Hours: 8hrs</li>
+          <li>Skills: Creativity</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://img.freepik.com/premium-vector/digital-marketing-social-media-with-man-laptop-symbol_112255-1712.jpg?w=2000" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Digital Marketing Manager</h5>
+        <p class="card-text"><ul>
+          <li>Salary:15-20Lk</li>
+          <li>Working Hours: 9hrs</li>
+          <li>Skills: SEO</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply
+        </a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://us.123rf.com/450wm/redeer/redeer1805/redeer180500026/101917998-engaging-content-blogging-media-planning-promotion-in-social-network-flat-vector-concept-.jpg?ver=6" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Marketing Specialist</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-20Lk</li>
+          <li>Working Hours: 10hrs</li>
+          <li>Skills: Stratagic Thinking</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://img.freepik.com/premium-vector/little-boy-intelligence-learning-having-fun-making-cyborg-school-child-character-enjoying-science-lesson-create-engineering-project-programming-smart-robot-cartoon-people-vector-illustration_1016-9827.jpg?w=2000" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Machine Learning Engineer</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-40Lk</li>
+          <li>Working Hours: 10hrs</li>
+          <li>Skills: NLP</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://media.istockphoto.com/vectors/engineers-scientists-tiny-characters-making-programming-huge-robot-in-vector-id1271230330?k=20&m=1271230330&s=612x612&w=0&h=olGFFI6WniUxSGe4fc8s2MHGrVcL6Out7UO1ADvVeCA=
+      " alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Robotics Engineer</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-30Lk</li>
+          <li>Working Hours: 10hrs</li>
+          <li>Skills: Active Learning</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="https://www.edureka.co/blog/wp-content/uploads/2018/09/shutterstock_725383498.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Artificial Intelligence (AI) Engineer</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-40Lk</li>
+          <li>Working Hours: 11hrs</li>
+          <li>Skills: Datamodeling</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      </div><div class="card" style="width: 18rem;">  
+      <img class="card-img-top" src="https://cdni.iconscout.com/illustration/premium/thumb/cyber-security-2974874-2488449.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Cybersecurity Analyst</h5>
+        <p class="card-text"><ul>
+          <li>Salary:10-40Lk</li>
+          <li>Working Hours: 9hrs</li>
+          <li>Skills: Intrusion Deltion</li>
+          
+        </ul></p>
+        <a href="#" class="btn btn-primary">Apply</a>
+      </div>
+      
+    
+    </div>
+  <!-- carousel -->
+   
+  <!-- cards -->
+   
+  <script>
+    document.getElementById('Signin').onclick = () => {
+      const email = document.getElementById('InputEmail');
+      const password = document.getElementById('Password').value;
+      const confirm = document.getElementById('cPassword').value;
+
+      if (password == confirm) {
+        fetch('/sign', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            email, password
+          })
+        })
+      }
+
+      else {
+        alert("Passwords doesn't match");
+
+      }
+    }
+  </script>
+
+
+  {{>foot}}
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
